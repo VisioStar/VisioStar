@@ -1,5 +1,9 @@
 [
   {
+    "name": "default",
+    "prompt": ""
+  },
+  {
     "name": "经典双享",
     "prompt": "BaiSeNiuNai,Limited Edition Dairy,250ml Milk."
   },
