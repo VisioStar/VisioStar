@@ -1,4 +1,3 @@
-# 让 ComfyUI 识别 VisioStar 目录下所有节点
 from .product_selector import ProductSelector
 from .MultiImageSaver import MultiImageSaver
 from .deepseek import DeepSeekNode
@@ -6,7 +5,9 @@ from .VisioStarCHATgpt import GPTNode
 from .VisioStardeepseekPRO import VisioStardeepseekPRO
 from .VisioStarGPTPRO import VisioStarGPTPRO
 from .VisioStarIMAGING import VisioStarIMAGING  # 图像多提示词节点
-from .VisioStarVISIONSinglePrompt import VisioStarVISIONSinglePrompt  # ✅ 新增单提示词节点
+from .VisioStarVISIONSinglePrompt import VisioStarVISIONSinglePrompt  # 单提示词节点
+from .visio_star_text import VisioStarText
+from .visio_translate_node import VisioStarTranslate
 
 NODE_CLASS_MAPPINGS = {
     "Product Selector": ProductSelector,
@@ -16,7 +17,9 @@ NODE_CLASS_MAPPINGS = {
     "VisioStardeepseekPRO": VisioStardeepseekPRO,
     "VisioStarGPTPRO": VisioStarGPTPRO,
     "VisioStarIMAGING": VisioStarIMAGING,
-    "VisioStarVISIONSinglePrompt": VisioStarVISIONSinglePrompt,  # ✅ 注册新节点
+    "VisioStarVISIONSinglePrompt": VisioStarVISIONSinglePrompt,
+    "VisioStarText": VisioStarText,
+    "VisioStarTranslate": VisioStarTranslate,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -27,5 +30,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "VisioStardeepseekPRO": "VisioStar DeepSeek PRO",
     "VisioStarGPTPRO": "🤖 VisioStar GPT PRO",
     "VisioStarIMAGING": "🖼 VisioStar 图像智能提示词",
-    "VisioStarVISIONSinglePrompt": "🖼 VisioStar 单提示词生成 (Vision)",  # ✅ UI 显示名称
+    "VisioStarVISIONSinglePrompt": "🖼 VisioStar 单提示词生成 (Vision)",
+    "VisioStarText": "📝 VisioStar 文本",
+    "VisioStarTranslate": "🌐 VisioStar 翻译",
 }
